@@ -26,7 +26,6 @@ class EmailLoginView(APIView):
             return Response({'msg': 'Credentials missing'}, status=status.HTTP_400_BAD_REQUEST)
         email = request.POST.get('email')
         password = request.POST.get('password')
-        print(email, password)
         user = authenticate(request, email=email, password=password)
         if user is not None:
             login(request, user)
@@ -37,7 +36,6 @@ class EmailLoginView(APIView):
 class PhoneLoginView(APIView):
     def post(self, request):
         if 'phone' not in request.data or 'password' not in request.data:
-            print(request.data)
             return Response({'msg': 'Credentials missing'}, status=status.HTTP_400_BAD_REQUEST)
         phone = request.POST.get('phone')
         password = request.POST.get('password')

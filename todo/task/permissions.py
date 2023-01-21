@@ -7,7 +7,6 @@ class IsOwner(BasePermission):
         return obj.owner == request.user
 
 
-
 class isAdminOrReadOnly(BasePermission):
     def has_permission(self, request, view):
         if request.method in SAFE_METHODS:

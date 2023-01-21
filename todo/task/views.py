@@ -14,13 +14,13 @@ from django.shortcuts import get_object_or_404
 # f.	POST /api/todo/<id:int>/execute/ - ручка для пометки задачи выполненной (опционально)
 
 class TaskViewSet(viewsets.ModelViewSet):
-    permission_classes = (IsOwner|IsAdminUser|IsAuthenticated,)
-    queryset = Task.objects.select_related('owner')
-        # permission_classes
+    permission_classes = (IsAuthenticated,IsOwner)
+    
+    def get_queryset(self):
+        return self.request.user.tasks.all()
     def get_serializer_class(self):
-        print(self.action)
-        if hasattr(self, 'action') and self.action in ('retrieve', 'destroy', 'patch', 'update'):
+        if self.action in ('retrieve', 'destroy', 'patch', 'update'):
             return TaskDetailSerializer
-        if hasattr(self, 'action') and self.action in ('create',):
+        if self.action in ('create',):
             return TaskCreateSerializer
         return TaskSerializer
