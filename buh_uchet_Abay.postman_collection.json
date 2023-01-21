@@ -1,0 +1,391 @@
+{
+	"info": {
+		"_postman_id": "21a89848-5d21-4cb6-9452-4079cefbe31e",
+		"name": "buh_uchet_Abay",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16375318"
+	},
+	"item": [
+		{
+			"name": "tasks",
+			"item": [
+				{
+					"name": "get_tasks",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc0MzkwMzEzLCJpYXQiOjE2NzQzMDM5MTMsImp0aSI6ImMzNjFkZWIyYmE5MTRmOWViNzllYjZkODhkMTVhZTU1IiwidXNlcl9pZCI6NH0.0WUfNXb3-9KnZ0aPtFf0g_zNdGiUxqT7wg1xvRUMAfo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host_name}}/api/todo/tasks/",
+							"host": [
+								"{{host_name}}"
+							],
+							"path": [
+								"api",
+								"todo",
+								"tasks",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create task",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc0MjkwODAxLCJpYXQiOjE2NzQyMDQ0MDEsImp0aSI6ImYzNzI5MTQxNTdkNjQ0NjRiYjU0ZGYxZWQyYzJiODJmIiwidXNlcl9pZCI6NH0.AENx2takbDRPRcDlIuU-vc7E4lbbTNNY4ZLqFs2932E",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "rgadrsgagr3422",
+									"type": "text"
+								},
+								{
+									"key": "text",
+									"value": "arggarga",
+									"type": "text"
+								},
+								{
+									"key": "deadline",
+									"value": "2023-01-23T21:54",
+									"type": "text"
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{host_name}}/api/todo/tasks/",
+							"host": [
+								"{{host_name}}"
+							],
+							"path": [
+								"api",
+								"todo",
+								"tasks",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "patch task",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc0MjkwODAxLCJpYXQiOjE2NzQyMDQ0MDEsImp0aSI6ImYzNzI5MTQxNTdkNjQ0NjRiYjU0ZGYxZWQyYzJiODJmIiwidXNlcl9pZCI6NH0.AENx2takbDRPRcDlIuU-vc7E4lbbTNNY4ZLqFs2932E",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "{{host_name}}/api/todo/tasks/2/",
+							"host": [
+								"{{host_name}}"
+							],
+							"path": [
+								"api",
+								"todo",
+								"tasks",
+								"2",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get_task",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc0MzkyMjk0LCJpYXQiOjE2NzQzMDU4OTQsImp0aSI6ImU0NDM2ODcwOGFlNTQ1MGVhNDFjNzZiNTllOWZlYmFlIiwidXNlcl9pZCI6NH0.WOxfgP6AbvktllhSHG5E8408Jt7IY-gdg3RihWOWV2o",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host_name}}/api/todo/tasks/7/",
+							"host": [
+								"{{host_name}}"
+							],
+							"path": [
+								"api",
+								"todo",
+								"tasks",
+								"7",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete_task",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc0Mzk0MDU3LCJpYXQiOjE2NzQzMDc2NTcsImp0aSI6IjE0M2YzYjc2OWIxYTRiNWVhYjA5NTlmZTZlNzFjZDVjIiwidXNlcl9pZCI6NH0.8U8f2f6MQ7lYZ1CQWk4kAUjNvew2O6je7p3axtnNQX0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{host_name}}/api/todo/tasks/2/",
+							"host": [
+								"{{host_name}}"
+							],
+							"path": [
+								"api",
+								"todo",
+								"tasks",
+								"2",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "users",
+			"item": [
+				{
+					"name": "create user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"phone\":\"+77054546442\",\r\n    \"password\":\"Lockdown2561\",\r\n    \"password2\":\"Lockdown2561\",\r\n    \"email\":\"dsefagrar@mail.ru\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host_name}}/api/users/accounts/register",
+							"host": [
+								"{{host_name}}"
+							],
+							"path": [
+								"api",
+								"users",
+								"accounts",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "token_refresh",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY3NDI4ODc2MSwiaWF0IjoxNjc0MjAyMzYxLCJqdGkiOiI5ZjhiNDM5ZWM0YjE0NzcyYjM4NWI1NjdhNDc5YTEwYiIsInVzZXJfaWQiOjJ9.A2htwSOaiHylJgTxVxVVHrvEjr1xyiexKqSsdWc5vOs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "refresh",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY3NDI4ODc2MSwiaWF0IjoxNjc0MjAyMzYxLCJqdGkiOiI5ZjhiNDM5ZWM0YjE0NzcyYjM4NWI1NjdhNDc5YTEwYiIsInVzZXJfaWQiOjJ9.A2htwSOaiHylJgTxVxVVHrvEjr1xyiexKqSsdWc5vOs",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{host_name}}/api/users/accounts/token-refresh/",
+							"host": [
+								"{{host_name}}"
+							],
+							"path": [
+								"api",
+								"users",
+								"accounts",
+								"token-refresh",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login phone",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "phone",
+									"value": "+77054846842",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Lockdown2561",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{host_name}}/api/users/accounts/login/phone",
+							"host": [
+								"{{host_name}}"
+							],
+							"path": [
+								"api",
+								"users",
+								"accounts",
+								"login",
+								"phone"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login email",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "fgadrhahd@mail.ru",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Lockdown2561",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{host_name}}/api/users/accounts/login/email",
+							"host": [
+								"{{host_name}}"
+							],
+							"path": [
+								"api",
+								"users",
+								"accounts",
+								"login",
+								"email"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "logout",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{host_name}}/api/users/accounts/logout",
+							"host": [
+								"{{host_name}}"
+							],
+							"path": [
+								"api",
+								"users",
+								"accounts",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "change password",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc0Mzk0MDU3LCJpYXQiOjE2NzQzMDc2NTcsImp0aSI6IjE0M2YzYjc2OWIxYTRiNWVhYjA5NTlmZTZlNzFjZDVjIiwidXNlcl9pZCI6NH0.8U8f2f6MQ7lYZ1CQWk4kAUjNvew2O6je7p3axtnNQX0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{host_name}}/api/users/accounts/change-password",
+							"host": [
+								"{{host_name}}"
+							],
+							"path": [
+								"api",
+								"users",
+								"accounts",
+								"change-password"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
